@@ -17,9 +17,15 @@ autocmd BufWinLeave * call clearmatches()
 "delte all traliing whitespaces
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
+"plugins
+execute pathogen#infect()
+filetype plugin indent on
+cs add $CSCOPE_DB
+
 set title
 set tabstop=8
 set softtabstop=8
 set shiftwidth=8
 set noexpandtab
 set number
+set mouse=n
