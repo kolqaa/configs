@@ -1,0 +1,23 @@
+[global_config]
+[keybindings]
+  go_down = <Alt>KP_Down
+  go_left = <Alt>KP_Left
+  go_right = <Alt>KP_Right
+  go_up = <Alt>KP_Up
+  next_tab = <Primary>Right
+  prev_tab = <Primary>Left
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_image = None
+    scroll_on_output = False
+    scrollback_infinite = True
+    scrollback_lines = 649
